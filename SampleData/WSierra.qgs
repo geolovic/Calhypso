@@ -1,0 +1,606 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="2.18.7">
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <customproperties/>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="basins20171109211926092" source="/Users/vicen/Desktop/CalHypso/SampleData/gisdata/basins.shp" name="basins">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="dem4020171109211923469" source="/Users/vicen/Desktop/CalHypso/SampleData/gisdata/dem40.tif" name="dem40">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <relations/>
+  <mapcanvas>
+    <units>meters</units>
+    <extent>
+      <xmin>496270.35522296861745417</xmin>
+      <ymin>4090111.46434103371575475</ymin>
+      <xmax>535162.35522296873386949</xmax>
+      <ymax>4117064.96434103371575475</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <projections>0</projections>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=utm +zone=30 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>1007</srsid>
+        <srid>3042</srid>
+        <authid>EPSG:3042</authid>
+        <description>ETRS89 / ETRS-TM30</description>
+        <projectionacronym>utm</projectionacronym>
+        <ellipsoidacronym>GRS80</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <layer_coordinate_transform_info/>
+  </mapcanvas>
+  <layer-tree-canvas>
+    <custom-order enabled="0">
+      <item>dem4020171109211923469</item>
+      <item>basins20171109211926092</item>
+    </custom-order>
+  </layer-tree-canvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="basins" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="basins20171109211926092" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="dem40" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="dem4020171109211923469" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <projectlayers>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>basins20171109211926092</id>
+      <datasource>./gisdata/basins.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>basins</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=30 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1007</srsid>
+          <srid>3042</srid>
+          <authid>EPSG:3042</authid>
+          <description>ETRS89 / ETRS-TM30</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="FID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="31,120,180,85"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="47,79,79,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.46"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="true"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="true"/>
+        <property key="labeling/enabled" value="true"/>
+        <property key="labeling/fieldName" value="id"/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="Arial"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="13"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="4294967295"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>FID</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name=".SF NS Text"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description=".SF NS Text,13,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="FID" index="0" name=""/>
+        <alias field="id" index="1" name=""/>
+        <alias field="name" index="2" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="FID"/>
+          <column width="-1" hidden="0" type="field" name="id"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="FID" expression=""/>
+        <default field="id" expression=""/>
+        <default field="name" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "FID", '&lt;NULL>' )</previewExpression>
+    </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>497396.61157477309461683</xmin>
+        <ymin>4091193.28862765664234757</ymin>
+        <xmax>534436.61157477309461683</xmax>
+        <ymax>4116863.28862765664234757</ymax>
+      </extent>
+      <id>dem4020171109211923469</id>
+      <datasource>./gisdata/dem40.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>dem40</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=30 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1007</srsid>
+          <srid>3042</srid>
+          <authid>EPSG:3042</authid>
+          <description>ETRS89 / ETRS-TM30</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" classificationMax="2270" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="448" type="singlebandpseudocolor">
+          <rasterTransparency/>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0">
+              <item alpha="255" value="448" label="448" color="#aeefd5"/>
+              <item alpha="255" value="460.2" label="460.2" color="#aff0d3"/>
+              <item alpha="255" value="472.2" label="472.2" color="#b0f2d0"/>
+              <item alpha="255" value="484.4" label="484.4" color="#b0f2ca"/>
+              <item alpha="255" value="496.6" label="496.6" color="#b1f2c4"/>
+              <item alpha="255" value="508.7" label="508.7" color="#b0f3be"/>
+              <item alpha="255" value="520.9" label="520.9" color="#b0f4ba"/>
+              <item alpha="255" value="533.1" label="533.1" color="#b2f6b5"/>
+              <item alpha="255" value="545.1" label="545.1" color="#b5f6b2"/>
+              <item alpha="255" value="557.3" label="557.3" color="#baf7b2"/>
+              <item alpha="255" value="569.5" label="569.5" color="#c0f7b2"/>
+              <item alpha="255" value="581.6" label="581.6" color="#c6f8b2"/>
+              <item alpha="255" value="593.8" label="593.8" color="#ccf9b2"/>
+              <item alpha="255" value="606" label="606" color="#d2fab1"/>
+              <item alpha="255" value="618" label="618" color="#d9fab2"/>
+              <item alpha="255" value="630.2" label="630.2" color="#e0fbb2"/>
+              <item alpha="255" value="642.4" label="642.4" color="#e7fcb2"/>
+              <item alpha="255" value="654.4" label="654.4" color="#eefcb3"/>
+              <item alpha="255" value="666.6" label="666.6" color="#f5fcb3"/>
+              <item alpha="255" value="678.8" label="678.8" color="#fafcb2"/>
+              <item alpha="255" value="690.9" label="690.9" color="#f8f9ac"/>
+              <item alpha="255" value="703.1" label="703.1" color="#eef4a2"/>
+              <item alpha="255" value="715.3" label="715.3" color="#e2f097"/>
+              <item alpha="255" value="727.3" label="727.3" color="#d5eb8c"/>
+              <item alpha="255" value="739.5" label="739.5" color="#c6e480"/>
+              <item alpha="255" value="751.7" label="751.7" color="#b8de76"/>
+              <item alpha="255" value="763.8" label="763.8" color="#aad86c"/>
+              <item alpha="255" value="776" label="776" color="#9ad362"/>
+              <item alpha="255" value="788.2" label="788.2" color="#8ccd59"/>
+              <item alpha="255" value="800.2" label="800.2" color="#7dc752"/>
+              <item alpha="255" value="812.4" label="812.4" color="#6ec24a"/>
+              <item alpha="255" value="824.6" label="824.6" color="#5ebc42"/>
+              <item alpha="255" value="836.6" label="836.6" color="#4db639"/>
+              <item alpha="255" value="848.8" label="848.8" color="#3eb032"/>
+              <item alpha="255" value="861" label="861" color="#31ab2c"/>
+              <item alpha="255" value="873.1" label="873.1" color="#27a52a"/>
+              <item alpha="255" value="885.3" label="885.3" color="#1ea02b"/>
+              <item alpha="255" value="897.5" label="897.5" color="#189a2e"/>
+              <item alpha="255" value="909.5" label="909.5" color="#129431"/>
+              <item alpha="255" value="921.7" label="921.7" color="#0e8e34"/>
+              <item alpha="255" value="933.9" label="933.9" color="#098938"/>
+              <item alpha="255" value="946" label="946" color="#07843c"/>
+              <item alpha="255" value="958.2" label="958.2" color="#0c823f"/>
+              <item alpha="255" value="970.4" label="970.4" color="#18823f"/>
+              <item alpha="255" value="982.4" label="982.4" color="#28843d"/>
+              <item alpha="255" value="994.6" label="994.6" color="#34883c"/>
+              <item alpha="255" value="1007" label="1007" color="#408c3b"/>
+              <item alpha="255" value="1019" label="1019" color="#4c8e3b"/>
+              <item alpha="255" value="1031" label="1031" color="#579238"/>
+              <item alpha="255" value="1043" label="1043" color="#639436"/>
+              <item alpha="255" value="1055" label="1055" color="#6e9634"/>
+              <item alpha="255" value="1067" label="1067" color="#789a32"/>
+              <item alpha="255" value="1080" label="1080" color="#809c30"/>
+              <item alpha="255" value="1092" label="1092" color="#89a02e"/>
+              <item alpha="255" value="1104" label="1104" color="#93a22b"/>
+              <item alpha="255" value="1116" label="1116" color="#9ca429"/>
+              <item alpha="255" value="1128" label="1128" color="#a6a627"/>
+              <item alpha="255" value="1140" label="1140" color="#b0aa24"/>
+              <item alpha="255" value="1153" label="1153" color="#bbad22"/>
+              <item alpha="255" value="1165" label="1165" color="#c5b01e"/>
+              <item alpha="255" value="1177" label="1177" color="#cfb11c"/>
+              <item alpha="255" value="1189" label="1189" color="#dab318"/>
+              <item alpha="255" value="1201" label="1201" color="#e4b414"/>
+              <item alpha="255" value="1213" label="1213" color="#eeb60e"/>
+              <item alpha="255" value="1225" label="1225" color="#f6b608"/>
+              <item alpha="255" value="1237" label="1237" color="#f8b004"/>
+              <item alpha="255" value="1250" label="1250" color="#f4a602"/>
+              <item alpha="255" value="1262" label="1262" color="#ee9b02"/>
+              <item alpha="255" value="1274" label="1274" color="#e89002"/>
+              <item alpha="255" value="1286" label="1286" color="#e28402"/>
+              <item alpha="255" value="1298" label="1298" color="#dc7a02"/>
+              <item alpha="255" value="1310" label="1310" color="#d86f02"/>
+              <item alpha="255" value="1323" label="1323" color="#d36602"/>
+              <item alpha="255" value="1335" label="1335" color="#ce5c02"/>
+              <item alpha="255" value="1347" label="1347" color="#c85402"/>
+              <item alpha="255" value="1359" label="1359" color="#c04a02"/>
+              <item alpha="255" value="1371" label="1371" color="#ba4202"/>
+              <item alpha="255" value="1383" label="1383" color="#b43a02"/>
+              <item alpha="255" value="1395" label="1395" color="#ae3102"/>
+              <item alpha="255" value="1408" label="1408" color="#a92a02"/>
+              <item alpha="255" value="1420" label="1420" color="#a32402"/>
+              <item alpha="255" value="1432" label="1432" color="#9d1e02"/>
+              <item alpha="255" value="1444" label="1444" color="#971702"/>
+              <item alpha="255" value="1456" label="1456" color="#921201"/>
+              <item alpha="255" value="1468" label="1468" color="#8d0e01"/>
+              <item alpha="255" value="1481" label="1481" color="#870800"/>
+              <item alpha="255" value="1493" label="1493" color="#820500"/>
+              <item alpha="255" value="1505" label="1505" color="#7d0400"/>
+              <item alpha="255" value="1517" label="1517" color="#7a0802"/>
+              <item alpha="255" value="1529" label="1529" color="#770d02"/>
+              <item alpha="255" value="1541" label="1541" color="#761002"/>
+              <item alpha="255" value="1553" label="1553" color="#751204"/>
+              <item alpha="255" value="1565" label="1565" color="#751404"/>
+              <item alpha="255" value="1578" label="1578" color="#751504"/>
+              <item alpha="255" value="1590" label="1590" color="#741604"/>
+              <item alpha="255" value="1602" label="1602" color="#741805"/>
+              <item alpha="255" value="1614" label="1614" color="#721a06"/>
+              <item alpha="255" value="1626" label="1626" color="#721d06"/>
+              <item alpha="255" value="1638" label="1638" color="#701f07"/>
+              <item alpha="255" value="1651" label="1651" color="#6f2108"/>
+              <item alpha="255" value="1663" label="1663" color="#6e2308"/>
+              <item alpha="255" value="1675" label="1675" color="#6e2408"/>
+              <item alpha="255" value="1687" label="1687" color="#6d2609"/>
+              <item alpha="255" value="1699" label="1699" color="#6c280a"/>
+              <item alpha="255" value="1711" label="1711" color="#6c280a"/>
+              <item alpha="255" value="1723" label="1723" color="#6c2a0a"/>
+              <item alpha="255" value="1736" label="1736" color="#6b2c0b"/>
+              <item alpha="255" value="1748" label="1748" color="#6a2c0c"/>
+              <item alpha="255" value="1760" label="1760" color="#6a2e0c"/>
+              <item alpha="255" value="1772" label="1772" color="#6b300e"/>
+              <item alpha="255" value="1784" label="1784" color="#6e3412"/>
+              <item alpha="255" value="1796" label="1796" color="#713917"/>
+              <item alpha="255" value="1808" label="1808" color="#743e1c"/>
+              <item alpha="255" value="1821" label="1821" color="#764220"/>
+              <item alpha="255" value="1833" label="1833" color="#794625"/>
+              <item alpha="255" value="1845" label="1845" color="#7d4a2b"/>
+              <item alpha="255" value="1857" label="1857" color="#804f32"/>
+              <item alpha="255" value="1869" label="1869" color="#835538"/>
+              <item alpha="255" value="1881" label="1881" color="#875a3f"/>
+              <item alpha="255" value="1893" label="1893" color="#8a6045"/>
+              <item alpha="255" value="1906" label="1906" color="#8c654c"/>
+              <item alpha="255" value="1918" label="1918" color="#906a54"/>
+              <item alpha="255" value="1930" label="1930" color="#936f5a"/>
+              <item alpha="255" value="1942" label="1942" color="#967460"/>
+              <item alpha="255" value="1954" label="1954" color="#987a68"/>
+              <item alpha="255" value="1966" label="1966" color="#9c8170"/>
+              <item alpha="255" value="1978" label="1978" color="#9e8778"/>
+              <item alpha="255" value="1991" label="1991" color="#a08d82"/>
+              <item alpha="255" value="2003" label="2003" color="#a3938b"/>
+              <item alpha="255" value="2015" label="2015" color="#a69a93"/>
+              <item alpha="255" value="2027" label="2027" color="#a7a09c"/>
+              <item alpha="255" value="2039" label="2039" color="#aaa7a4"/>
+              <item alpha="255" value="2051" label="2051" color="#acacab"/>
+              <item alpha="255" value="2064" label="2064" color="#aeaeae"/>
+              <item alpha="255" value="2076" label="2076" color="#b2b2b2"/>
+              <item alpha="255" value="2088" label="2088" color="#b5b5b5"/>
+              <item alpha="255" value="2100" label="2100" color="#b8b8b8"/>
+              <item alpha="255" value="2112" label="2112" color="#bcbcbc"/>
+              <item alpha="255" value="2124" label="2124" color="#c0c0c0"/>
+              <item alpha="255" value="2136" label="2136" color="#c4c4c4"/>
+              <item alpha="255" value="2148" label="2148" color="#c8c8c8"/>
+              <item alpha="255" value="2161" label="2161" color="#cccccc"/>
+              <item alpha="255" value="2173" label="2173" color="#d0ced0"/>
+              <item alpha="255" value="2185" label="2185" color="#d4d2d4"/>
+              <item alpha="255" value="2197" label="2197" color="#d8d6d8"/>
+              <item alpha="255" value="2209" label="2209" color="#dad8da"/>
+              <item alpha="255" value="2221" label="2221" color="#dddbdd"/>
+              <item alpha="255" value="2234" label="2234" color="#e1dfe1"/>
+              <item alpha="255" value="2246" label="2246" color="#e5e3e5"/>
+              <item alpha="255" value="2258" label="2258" color="#e9e7e9"/>
+              <item alpha="255" value="2270" label="2270" color="#ebe9eb"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+  </projectlayers>
+  <properties>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+      <ProjectCRSID type="int">3452</ProjectCRSID>
+    </SpatialRefSys>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">246</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <Digitizing>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <SnappingMode type="QString">current_layer</SnappingMode>
+      <DefaultSnapType type="QString">off</DefaultSnapType>
+      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+    </Digitizing>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+  </properties>
+  <visibility-presets/>
+</qgis>
