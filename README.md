@@ -1,13 +1,14 @@
 # CalHypso
-This QGIS toolbox creates hypsometric curves from a 
+QGIS toolbox to create hypsometric curves from a 
 Digital Elevation Model and a polygon shapefile with basins. 
 
 ## Instalation
 
 To install the toolbox, copy the **Calhypso.py** and **Calhypso.py.help** files in the script folder:
-- **Users/user_name/.qgis2/processing/scripts**  [MAC] 
-- **C:\Users\user_name**   [Windows]
+- **Users/user_name/.qgis2/processing/scripts**  [MAC] (Hidden folder)
+- **C:\Users\user_name\.qgis2/processing/scripts**   [Windows]
 
+An alternative to install the toolbox is using the **"Add script from file"** tool located in the Processing Toolbox > Scripts > Tools. (This way does not include the help file)
 
 ## Usage
 Launch the QGIS Toolbox and fill in the required parameters:
