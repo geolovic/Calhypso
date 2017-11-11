@@ -26,9 +26,9 @@
 #  vperez@ugr.es // geolovic@gmail.com
 
 #  Version: 1.0
-#  October 09, 2017
+#  November 11, 2017
 
-#  Last modified October 09, 2017
+#  Last modified November 11, 2017
 
 import gdal
 import ogr
@@ -60,15 +60,9 @@ basin_shapefile = Basin_shapefile
 dem = Digital_Elevation_Model
 attr_field = str(Id_field)
 name_field = str(Name_field)
-basedir = os.path.dirname(basin_shapefile)
-
-
-# # DEBUG PARAMETERS
-# # ================
-# basin_shapefile = "data/basins.shp"
-# dem = "data/dem40.tif"
-# attr_field = "id"
-# name_field = "id"
+basedir = os.path.dirname(basin_shapefile) + "/calhypso_output_files/"
+if not os.path.exists(basedir):
+    os.mkdir(basedir)
 
 
 def get_hypsometric_curves(dem, basin_shapefile, attr_field, name_field=""):
@@ -441,7 +435,7 @@ class CalHypsoApp:
             else:
                 curve_color = float(idx) / len(self.curves)
                 
-            ax.plot(curva.get_aa(), curva.get_hh(), label="{0} (HI: {1:.3f})".format(curva.get_name(), curva.get_hi()),
+            ax.plot(curva.get_aa(), curva.get_hh(), label="{0}".format(curva.get_name()),
                     c=cm(curve_color), lw=1.5)
         
         if self.draw_legend:
@@ -506,7 +500,7 @@ class CalHypsoApp:
           
             ax.text(0.77, 0.97, cadena, size=11, verticalalignment="top")
             ax.figure.canvas.draw()
-            aux_fig.savefig(self.basedir + "/" + curva.get_name() + filetype)
+            aux_fig.savefig(self.basedir + curva.get_name() + filetype)
             
         plt.close(aux_fig)
         
@@ -514,10 +508,10 @@ class CalHypsoApp:
         """
         Export all the curves in the graphic
         """
-        ff = open(self.basedir + "/curve_moments.txt", "w")
+        ff = open(self.basedir + "curve_moments.txt", "w")
         ff.write("Basin;HI;Kurtosis;Skewness;DKurtosis;DSkewness\n")
         for cc in self.curves:
-            out_path = self.basedir + "/" + cc.get_name() + ".txt"
+            out_path = self.basedir + cc.get_name() + ".txt"
             np.savetxt(out_path, cc.get_data())
             hi = cc.get_hi()
             ku = cc.get_ku()

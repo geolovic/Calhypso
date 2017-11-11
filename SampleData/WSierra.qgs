@@ -5,10 +5,10 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="basins20171109211926092" source="/Users/vicen/Desktop/CalHypso/SampleData/gisdata/basins.shp" name="basins">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="basins20171109211926092" source="/Users/vicen/Documents/GitHub/Calhypso/SampleData/gisdata/basins.shp" name="basins">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="dem4020171109211923469" source="/Users/vicen/Desktop/CalHypso/SampleData/gisdata/dem40.tif" name="dem40">
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="dem4020171109211923469" source="/Users/vicen/Documents/GitHub/Calhypso/SampleData/gisdata/dem40.tif" name="dem40">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -16,10 +16,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>496270.35522296861745417</xmin>
-      <ymin>4090111.46434103371575475</ymin>
-      <xmax>535162.35522296873386949</xmax>
-      <ymax>4117064.96434103371575475</ymax>
+      <xmin>496470.61157477309461683</xmin>
+      <ymin>4090551.53862765664234757</ymin>
+      <xmax>535362.61157477309461683</xmax>
+      <ymax>4117505.03862765664234757</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -58,6 +58,12 @@
   </legend>
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>500306.61157477181404829</xmin>
+        <ymin>4093363.28862765617668629</ymin>
+        <xmax>527336.61157477367669344</xmax>
+        <ymax>4114283.28862765990197659</ymax>
+      </extent>
       <id>basins20171109211926092</id>
       <datasource>./gisdata/basins.shp</datasource>
       <keywordList>
