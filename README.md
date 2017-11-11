@@ -12,6 +12,8 @@ To install the toolbox, copy the **Calhypso.py** and **Calhypso.py.help** files 
 ## Usage
 Launch the QGIS Toolbox and fill in the required parameters:
 
+![Calhypso Toolbox](https://geolovic.github.io/Calhypso/images/CalypsoToolbox.jpg)
+
 1. Digital Elevation Model (DEM) to take elevations. 
 2. Polygon shapefile with basins
 3. Id field in the shapefile. It MUST be an integer field identifying the different basins. Avoid use the zero as an id number.
@@ -19,7 +21,10 @@ Launch the QGIS Toolbox and fill in the required parameters:
 
 Once the tool have processed all the basins, it will show a graphic 
 window with the hipsometric curves. The graphic window can show all the curves
-together (G1) or individual basins (G2). 
+together (G1) or individual basins (G2).
+
+![Calhypso Toolbox](https://geolovic.github.io/Calhypso/images/Graphic_types.jpg)
+
 In this graphic window we can use the following keys:
 
 * **A** : Shows all the hipsometric curves in a single graphic (G1)
@@ -35,9 +40,9 @@ their order (by useing the Id field)
 according the used ramp color
 * **C** : Change the color ramp for G1. There are 8 different diverging color 
 ramps available.
-* **X** : Save all the profiles in a specific format in the same directory as the 
-basin shapefile. It will create a Format has to be selected with keys 1-3. It would be generated a 
+* **X** : Save all the profiles in a specific format. It creates a folder called *Calhypso_output_files* in the same location that
+the basin shapefile to put all figures there. Format has to be selected with keys 1-3. 
 single graphic per curve. If alternative metrics are on, they would be printed. 
 * **1 - 3** - Keys to select formats (only active if **X** was pressed first) 
-* **E** - Export all curves in text files in the output folder. It also generated 
-a file named *"curve_moments.txt"* with all the hypsometric metrics values.
+* **E** - Export all curves in text files. It creates a folder called *Calhypso_output_files* in the same location that
+the basin shapefile to put all figures there. It also generated a file named **"curve_moments.txt"** with all the hypsometric metrics values.
