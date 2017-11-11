@@ -536,3 +536,4 @@ class CalHypsoApp:
 if __name__ == "__main__":
     # execute only if run as a script
     my_graph = main(dem, basin_shp, attr_field, name_field)
+    plt.show()
